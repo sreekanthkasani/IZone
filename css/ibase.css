@@ -1,0 +1,166 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 14, 2017, 6:40:53 AM
+    Author     : sreekanth kasani  ')
+*/
+
+body {
+    background: #0ca3d2;
+    background-image:url(../images/Midea.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    min-height: 100%;
+}
+
+.main {
+    background: aliceblue;
+    border: 2px solid gray;
+    width: 250px;
+    margin: auto;
+    box-shadow: 2px 2px 5px 1px gray;
+}
+
+.user-pic {
+    border-radius: 50%;
+    height: 83px;
+    margin-top: 10px;
+    margin-left: 11px;
+    border-bottom: 2px solid gray;
+}
+
+.user-name {
+    margin-left: 15px;
+    margin-bottom: 0;
+    color: #B77425;
+}
+
+.user-contact {
+    list-style-type: none;
+    padding: 0;
+}
+
+.fa-envelope-o {
+    margin-right: 10px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+.fa-globe {
+    margin-right: 10px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+@media only screen 
+and (min-width : 600px) {
+    .main {
+        width: 971px;
+        height: 101px; 
+    }
+    .user-pic {
+        border-right: 2px solid gray;
+        float: left;
+    }
+    .contact-box {
+        float: left;
+    }
+}
+
+
+
+/* try 50% */
+.circle .up {
+    border-radius: 10rem 10rem 0 0;
+}
+.circle .down {
+    border-radius: 0 0 10rem 10rem;
+}
+.circle .count {
+    border-radius: 50%;
+}
+
+.vote {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-family: "Noto Sans";
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    margin: 1rem;
+}
+
+.increment {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 0;
+    flex: 1 0 0;
+    text-align: center;
+    opacity: .5;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.increment.up {
+    background: #4BC35F;
+    height: 50%;
+    margin-bottom: 0.25rem;
+}
+.increment.down {
+    background: #C15044;
+    height: 50%;
+}
+.increment:hover {
+    opacity: 1;
+}
+
+.count {
+    position: absolute;
+    top: 0;
+    border-radius: 0.1rem;
+    margin: 2.5rem;
+    background: #F6F3E4;
+    width: 5rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 5rem;
+    text-align: center;
+    box-shadow: 0 0 0 0.5rem #F6F3E4;
+    pointer-events: none;
+}
+.count.upvoted {
+    color: #4BC35F;
+}
+.count.downvoted {
+    color: #C15044;
+}
+
+.bump {
+    -webkit-animation: bump 200ms;
+    animation: bump 200ms;
+}
+
+@-webkit-keyframes bump {
+    30% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+}
+
+@keyframes bump {
+    30% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+}
+* {
+    box-sizing: border-box;
+}
+
